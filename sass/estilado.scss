@@ -1,5 +1,46 @@
+$color-principal: white;
+
+body {
+    background-color: black;
+
+}
+
+h1 {
+    color:$color-principal;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 30px;
+    padding-left: 50px; 
+}
+
+header {
+    background-color: #000000; 
+    padding-bottom: 80px;
+            ul.menuFlex {
+                display: flex;
+                flex-direction: row;
+                  justify-content: center;
+                        }   
+                    li {
+                    list-style: none;
+                    border-radius: 10px;
+                    padding: 20px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-family: 'Poppins', sans-serif; 
+                    margin-top: 50px; 
+                        }   
+                        a {
+                            text-decoration: none;
+                            color: $color-principal;
+                            font-size: 25px;    
+                            }
+                          }
+
+
 footer {
-    div {margin-top: 200px;
+    div {
     margin-bottom: 200px;
     }
     div.footerFlex {
@@ -8,20 +49,11 @@ footer {
         align-items: center;
         justify-content: space-around;
     }
-
-    div{
-        
-        p.colorFooter{
-            color: #ed217c;
-        }
-        img.iconoRedes{
-            width: 25px;
-            height: 25px;
-        }      
-        img{
-            margin-left: 226px;
-        } 
-    }
+        .icono {
+            color: $color-principal;
+            font-size: 40px;
+            padding-left: 200px;
+        }    
 }   
 
 
@@ -31,3 +63,22 @@ h1.tituloFlex {
 }
 
 
+
+#contenedor{
+    width: 100%;
+    display: grid;
+    justify-content: center;             
+    #proyectos{
+            display: grid;
+            width: fit-content;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:  1fr 1fr 1fr; 
+            column-gap: 10px;
+            row-gap: 10px;
+            justify-content: center; 
+                
+                img{
+                    width:100%;
+                     }     
+     }
+}

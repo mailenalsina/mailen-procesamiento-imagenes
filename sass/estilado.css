@@ -1,5 +1,51 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+header {
+  background-color: #000000;
+  padding-bottom: 80px;
+}
+
+header ul.menuFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header li {
+  list-style: none;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 50px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
 footer div {
-  margin-top: 200px;
   margin-bottom: 200px;
 }
 
@@ -18,17 +64,10 @@ footer div.footerFlex {
       justify-content: space-around;
 }
 
-footer div p.colorFooter {
-  color: #ed217c;
-}
-
-footer div img.iconoRedes {
-  width: 25px;
-  height: 25px;
-}
-
-footer div img {
-  margin-left: 226px;
+footer .icono {
+  color: white;
+  font-size: 40px;
+  padding-left: 200px;
 }
 
 h1.tituloFlex {
@@ -38,5 +77,36 @@ h1.tituloFlex {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+#contenedor {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contenedor #proyectos {
+  display: -ms-grid;
+  display: grid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contenedor #proyectos img {
+  width: 100%;
 }
 /*# sourceMappingURL=estilado.css.map */
