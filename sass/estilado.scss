@@ -1,0 +1,33 @@
+footer {
+    div {margin-top: 200px;
+    margin-bottom: 200px;
+    }
+    div.footerFlex {
+        display:flex ;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    div{
+        
+        p.colorFooter{
+            color: #ed217c;
+        }
+        img.iconoRedes{
+            width: 25px;
+            height: 25px;
+        }      
+        img{
+            margin-left: 226px;
+        } 
+    }
+}   
+
+
+h1.tituloFlex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
