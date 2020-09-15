@@ -1,19 +1,44 @@
+html {
+  width: auto;
+}
+
 body {
   background-color: black;
 }
 
-h1 {
-  color: white;
+h2 {
+  background-color: white;
+  color: black;
   font-weight: normal;
   font-family: 'Poppins', sans-serif;
   text-align: left;
   font-size: 30px;
-  padding-left: 50px;
+  margin-bottom: 100px;
+  padding-left: 220px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 header {
   background-color: #000000;
   padding-bottom: 80px;
+}
+
+header .menu-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header h1 {
+  color: white;
 }
 
 header ul.menuFlex {
@@ -24,19 +49,17 @@ header ul.menuFlex {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 40px;
 }
 
 header li {
   list-style: none;
   border-radius: 10px;
   padding: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   font-family: 'Poppins', sans-serif;
-  margin-top: 50px;
 }
 
 header a {
@@ -98,9 +121,9 @@ h1.tituloFlex {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 10px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

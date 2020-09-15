@@ -1,35 +1,51 @@
 $color-principal: white;
 
+html {
+    width: auto;
+}
+
+
 body {
     background-color: black;
 
 }
 
-h1 {
-    color:$color-principal;
+h2 {
+    background-color: white ;
+    color: rgb(0, 0, 0);
     font-weight: normal;
     font-family: 'Poppins', sans-serif;
     text-align: left;
     font-size: 30px;
-    padding-left: 50px; 
+    margin-bottom: 100px; 
+    padding-left: 220px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 header {
     background-color: #000000; 
     padding-bottom: 80px;
+    .menu-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        h1 {
+            color: $color-principal;
+        }
             ul.menuFlex {
                 display: flex;
                 flex-direction: row;
-                  justify-content: center;
+                justify-content: flex-end;
+                padding-right: 40px;
                         }   
                     li {
                     list-style: none;
                     border-radius: 10px;
                     padding: 20px;
-                    padding-top: 5px;
-                    padding-bottom: 5px;
                     font-family: 'Poppins', sans-serif; 
-                    margin-top: 50px; 
+                   
                         }   
                         a {
                             text-decoration: none;
@@ -37,8 +53,6 @@ header {
                             font-size: 25px;    
                             }
                           }
-
-
 footer {
     div {
     margin-bottom: 200px;
@@ -63,7 +77,6 @@ h1.tituloFlex {
 }
 
 
-
 #contenedor{
     width: 100%;
     display: grid;
@@ -73,10 +86,9 @@ h1.tituloFlex {
             width: fit-content;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows:  1fr 1fr 1fr; 
-            column-gap: 10px;
-            row-gap: 10px;
+            column-gap: 20px;
+            row-gap: 30px;
             justify-content: center; 
-                
                 img{
                     width:100%;
                      }     
